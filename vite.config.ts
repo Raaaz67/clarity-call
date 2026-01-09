@@ -3,10 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // FIX: This ensures paths work on GitHub Pages AND locally
-  base: mode === 'production' ? '/clarity-call/' : '/',
+  // CHANGE THIS: Since you have a custom domain, base should be '/'
+  base: "/", 
   server: {
     host: "::",
     port: 8080,
